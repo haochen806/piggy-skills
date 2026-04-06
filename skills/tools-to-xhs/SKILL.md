@@ -8,6 +8,14 @@ allowed-tools: WebSearch, WebFetch, Bash, Read, Write, mcp__nanoclaw__xhs_post
 
 You find a recent, trending AI tool, product, or open-source project, write a Chinese XHS-style long article, and publish it.
 
+## ⚠️ WEEKEND-ONLY PUBLISHING RULE
+
+**Only publish to 小红书 on weekends (Saturday & Sunday).** Posting on weekdays risks getting flagged by XHS. If it's a weekday:
+1. Still research and prepare the post (images + text)
+2. Save everything to the posts/ folder as usual
+3. Do NOT call `mcp__nanoclaw__xhs_post` — tell the user the post is ready and will be published on the weekend
+4. If the user explicitly insists on publishing now, warn them about the risk first
+
 ## CRITICAL: Post Directory
 
 All post files MUST go in `/workspace/project/posts/{FOLDER}/`. Do NOT use `/workspace/group/posts/` or any relative `posts/` path — the XHS publishing tool only reads from `/workspace/project/posts/`.
